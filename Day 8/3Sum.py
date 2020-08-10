@@ -20,6 +20,8 @@ A solution set is:
 
 from typing import List
 import time
+import random
+
 
 # classic two-pointer solution
 class Solution:
@@ -50,7 +52,6 @@ class Solution:
 
         return result
 
-import random
 
 sol = Solution()
 start_time = time.time()
@@ -58,3 +59,10 @@ start_time = time.time()
 # print(sol.threeSum([-1, 0, 1, 2, -1, -4]))
 print(sol.threeSum([random.randint(-1000, 1000) for _ in range(300)]))
 print("--- %s seconds ---" % (time.time() - start_time))
+
+"""
+RESULT 
+
+Runtime: 704 ms, faster than 94.23% of Python3 online submissions for 3Sum.
+Memory Usage: 17.2 MB, less than 60.63% of Python3 online submissions for 3Sum.
+"""
